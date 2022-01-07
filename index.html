@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>b2bot</title>
+</head>
+
+<body>
+    <label for="body">Choose body color:</label>
+    <input type="color" id='body'>
+    <br>
+    <label for="hat">Choose hat:</label>
+    <select id="hat" name="hat">
+        <option value="cap">cap</option>
+        <option value="beanie">beanie</option>
+        <option value="beach_hat">beach hat</option>
+    </select>
+    <input type="color" id='hatcolor'>
+    <br>
+    <label for="eyewear">Choose eyewear:</label>
+    <select id="eyewear" name="eyewear">
+        <option value="glasses">glasses</option>
+        <option value="monoacle">monoacle</option>
+    </select>
+    <br>
+    <label for="fin">Choose fin color:</label>
+    <input type="color" id='fin'>
+    <br>
+    <label for="cars">Choose mouth:</label>
+    <select id="mouth" name="mouth">
+        <option value="default">default</option>
+        <option value="small">small</option>
+        <option value="morty">morty</option>
+        <option value="lipstick">lipstick</option>
+    </select>
+    <br>
+    <label for="accessories">Choose accessories:</label>
+    <select id="accessories" name="accessories">
+        <option value="goatee">goatee</option>
+        <option value="moustache">moustache</option>
+        <option value="bow_tie">bow tie</option>
+    </select>
+    <input type="color" id='accessoriescolor'>
+    <br>
+    <button onclick="createString()">Create String</button>
+    <p id="res"></p>
+</body>
+<script src="index.js"></script>
+
+</html>
