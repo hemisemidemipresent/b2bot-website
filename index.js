@@ -9,7 +9,12 @@ function createString() {
     let mouth = document.getElementById('mouth').value;
     let accessories = document.getElementById('accessories').value;
     let accessoriesColor = document.getElementById('accessoriescolor').value;
-    document.getElementById(
-        'res'
-    ).innerText = `body(${bodyColor});hat(${hat},${hatColor});fin(default,${finColor});eyewear(${eyewear},${eyewearColor});mouth(${mouth});accessories(${accessories},${accessoriesColor})`;
+    let str = `body(${bodyColor});`;
+    if (hat) str += `hat(${hat},${hatColor});`;
+    str += `fin(default,${finColor});`;
+    if (eyewear) str += `eyewear(${eyewear},${eyewearColor});`;
+    str += `mouth(${mouth});`;
+    if (accessories) str += `accessories(${accessories},${accessoriesColor})`;
+    if (str.endsWith(';')) str = str.substring(0, str.length - 1);
+    document.getElementById('res').innerText = str;
 }
