@@ -2,7 +2,8 @@ function createString() {
     let bodyColor = document.getElementById('body').value;
     let hat = document.getElementById('hat').value;
     let hatColor = document.getElementById('hatcolor').value;
-    let finColor = document.getElementById('fin').value;
+    let fin = document.getElementById('fin').value;
+    let finColor = document.getElementById('fincolor').value;
     let eyewear = document.getElementById('eyewear').value;
     let eyewearColor = document.getElementById('eyewearcolor').value;
 
@@ -11,7 +12,7 @@ function createString() {
     let accessoriesColor = document.getElementById('accessoriescolor').value;
     let str = `body(${bodyColor});`;
     if (hat) str += `hat(${hat},${hatColor});`;
-    str += `fin(default,${finColor});`;
+    str += `fin(${fin},${finColor});`;
     if (eyewear) str += `eyewear(${eyewear},${eyewearColor});`;
     str += `mouth(${mouth});`;
     if (accessories) str += `accessories(${accessories},${accessoriesColor})`;
